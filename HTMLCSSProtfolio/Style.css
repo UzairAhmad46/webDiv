@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 700;
+}
+
+.Protfolio {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+}
+.navlist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 15vh;
+  width: 100%;
+}
+
+.Protfolio .navlist {
+  display: flex;
+  gap: 3.5rem;
+}
+
+.navlist li {
+  list-style: none;
+}
+
+.navlist li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #fff;
+  position: relative;
+}
+.left-container .right-contianer {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+.left-container {
+  background-color: #262525;
+  width: 70%;
+  padding-left: 3rem;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.right-contianer {
+  width: 30%;
+  background: linear-gradient(-40deg, #3877ff, #262525 70%);
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  gap: 3rem;
+}
+.images img {
+  width: 1.7rem;
+}
+
+.content {
+  margin-left: 4rem;
+}
+
+.content .Intro {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.content .Intro span {
+  color: #5db9ee;
+}
+
+.content h1 {
+  font-size: 4rem;
+  color: #5db9ee;
+}
+
+.content .details {
+  font-size: 1.1rem;
+  color: white;
+  max-width: 38rem;
+  margin: 1.1rem 0 3rem 0;
+  line-height: 1.8rem;
+}
+
+.btn button {
+  border: 0.1rem solid #5db9ee;
+  font-size: 1.1rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+button:nth-child(1) {
+  background: #3877ff;
+  color: #262525;
+}
+
+button:nth-child(2) {
+  background: transparent;
+  color: #5db9ee;
+  margin-left: 2rem;
+}
+
+button:nth-child(1):hover {
+  background: transparent;
+  color: #3877ff;
+}
+button:nth-child(2):hover {
+  background: #3877ff;
+  color: #262525;
+}
+
+.design .circle {
+  aspect-ratio: 1;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+
+.circle:nth-child(1) {
+  background: linear-gradient(90deg, transparent 50%, #262525 50%);
+  width: 38rem;
+}
+
+.circle:nth-child(2) {
+  background-image: url(./images/PofileImage.JPG);
+  width: 30rem;
+  border: 1rem solid white;
+  box-shadow: 0 0 2rem #3877ff, inset 0 0 2rem #3877ff, 0 0 2rem black,
+    inset 0 0 2rem black, 0 0 4rem black, inset 0 0 4rem black;
+}
+
+.navlist li a ::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  height: 0.1rem;
+  left: 0;
+  bottom: -5px;
+  transform: scalex(0);
+}
+
+.navlist li a :hover::after {
+  transform: scalex(1);
+}
+@media screen and (max-width: 1394px) {
+  .content {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1289px) {
+  .content h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .content {
+    flex-wrap: wrap;
+  }
+}
